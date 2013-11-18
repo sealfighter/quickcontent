@@ -21,8 +21,12 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Solr Start / Stop
 
+** Start : bundle exec rake sunspot:solr:start (As background task)
+** Stop  : bundle exec rake sunspot:solr:stop
+** Run   : bundle exec rake sunspot:solr:run   (As foreground task)
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+

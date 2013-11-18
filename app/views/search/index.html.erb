@@ -1,0 +1,26 @@
+
+<% content_for :title do %>
+  Search Results
+<% end %>
+
+<h2>Search Results</h2>
+<p>You search for "<%= search_query() %>" returned <%= @pages.count %> results</p>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  <% @pages.each do |page| %>
+    <tr>
+      <td><%= page.title %></td>
+      <td><%= page.summary %></td>
+      <td><%= link_to 'Show', page_path(page) %></td>
+      <td><%= link_to 'Edit', edit_page_path(page) %></td>
+      <td><%= link_to 'Delete', page_path(page),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+    </tr>
+  <% end %>
+</table>

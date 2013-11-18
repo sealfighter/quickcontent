@@ -1,0 +1,8 @@
+<ul>
+<% breadcrumb(@page).each do |link| %>
+	<li><%= link_to_if( link.id != @page.id,link.title, page_path(link)) do %>
+		<%= link.title %>
+		<% end %>
+	</li>
+<% end %>
+</ul>

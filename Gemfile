@@ -35,6 +35,7 @@ gem 'rsolr'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
 
+gem 'seed_dumper'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

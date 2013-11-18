@@ -23,10 +23,10 @@ Things you may want to cover:
 
 * Solr Actions
 
-** Start   : bundle exec rake sunspot:solr:start (As background task)
-** Stop    : bundle exec rake sunspot:solr:stop
-** Run     : bundle exec rake sunspot:solr:run   (As foreground task)
-** Reindex : bundle exec rake sunspot:solr:reindex
+* Start   : bundle exec rake sunspot:solr:start (As background task)
+* Stop    : bundle exec rake sunspot:solr:stop
+* Run     : bundle exec rake sunspot:solr:run   (As foreground task)
+* Reindex : bundle exec rake sunspot:solr:reindex
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
